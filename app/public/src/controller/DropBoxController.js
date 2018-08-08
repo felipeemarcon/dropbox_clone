@@ -423,7 +423,7 @@ class DropBoxController {
     switch (file.type) {
       case 'folder':
         return `
-           <svg width="160" height="160" viewBox="0 0 160 160" class="mc-icon-template-content tile__preview tile__preview--icon">
+          <svg width="160" height="160" viewBox="0 0 160 160" class="mc-icon-template-content tile__preview tile__preview--icon">
             <title>content-folder-large</title>
             <g fill="none" fill-rule="evenodd">
                 <path d="M77.955 53h50.04A3.002 3.002 0 0 1 131 56.007v58.988a4.008 4.008 0 0 1-4.003 4.005H39.003A4.002 4.002 0 0 1 35 114.995V45.99c0-2.206 1.79-3.99 3.997-3.99h26.002c1.666 0 3.667 1.166 4.49 2.605l3.341 5.848s1.281 2.544 5.12 2.544l.005.003z"
@@ -711,7 +711,7 @@ class DropBoxController {
           break;
       
         default:
-          window.open('/file?path=' + file.path);
+          window.open(file.path);
       }
 
     });
